@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/textView" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton"
+                android:layout_weight="1"
+                android:src="@drawable/ic_cuaderno"
+                android:onClick="onClickImgButon1" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton2"
+                android:layout_weight="1"
+                android:src="@drawable/ic_ensalada"
+                android:onClick="onClickImgButon2"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false"
+                android:clickable="false"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton3"
+                android:layout_weight="1"
+                android:src="@drawable/ic_infusiones"
+                android:onClick="onClickImgButon3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton4"
+                android:layout_weight="1"
+                android:src="@drawable/ic_postres"
+                android:onClick="onClickImgButon3" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton5"
+                android:layout_weight="1"
+                android:src="@drawable/ic_sopas"
+                android:onClick="onClickImgButon3" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton6"
+                android:layout_weight="1"
+                android:src="@drawable/ic_carnes"
+                android:onClick="onClickImgButon3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton7"
+                android:layout_weight="1"
+                android:src="@drawable/ic_cafe"
+                android:onClick="onClickImgButon3" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton8"
+                android:layout_weight="1"
+                android:src="@drawable/ic_licores"
+                android:onClick="onClickImgButon3" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton9"
+                android:layout_weight="1"
+                android:src="@drawable/ic_otros"
+                android:onClick="onClickImgButon3" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
